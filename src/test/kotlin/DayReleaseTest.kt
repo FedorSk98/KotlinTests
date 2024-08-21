@@ -11,7 +11,7 @@ class DayReleaseTest {
     fun testTwoHoliday() {
 
         val lengthHoliday = 2
-        val array = listOf(0, 0, 1, 0, 0)
+        val array = intArrayOf(0, 0, 1, 0, 0)
 
         val expectedHoliday = 2
         assertEquals(expectedHoliday, dayRelease.findDayoffs(lengthHoliday, array))
@@ -20,7 +20,7 @@ class DayReleaseTest {
     @Test
     fun testOneHoliday() {
         val lengthHoliday = 1
-        val array = listOf(0, 0, 1, 0)
+        val array = intArrayOf(0, 0, 1, 0)
 
         val expectedHoliday = 4
         assertEquals(expectedHoliday, dayRelease.findDayoffs(lengthHoliday, array))
@@ -29,7 +29,7 @@ class DayReleaseTest {
     @Test
     fun testThreeHoliday() {
         val lengthHoliday = 3
-        val array = listOf(0, 0, 1, 0, 0)
+        val array = intArrayOf(0, 0, 1, 0, 0)
 
         val expectedHoliday = 0
         assertEquals(expectedHoliday, dayRelease.findDayoffs(lengthHoliday, array))
@@ -38,7 +38,7 @@ class DayReleaseTest {
     @Test
     fun testOneTwoHoliday() {
         val lengthHoliday = 1
-        val array = listOf(0, 0, 1, 0, 0, 0)
+        val array = intArrayOf(0, 0, 1, 0, 0, 0)
 
         val expectedHoliday = 9
         assertEquals(expectedHoliday, dayRelease.findDayoffs(lengthHoliday, array))
@@ -47,7 +47,7 @@ class DayReleaseTest {
     @Test
     fun testOneDaysCount9Version() {
         val lengthHoliday = 1
-        val array = listOf(0, 0, 1, 0, 0)
+        val array = intArrayOf(0, 0, 1, 0, 0)
 
         val expectedHoliday = 6
         assertEquals(expectedHoliday, dayRelease.findDayoffs(lengthHoliday, array))

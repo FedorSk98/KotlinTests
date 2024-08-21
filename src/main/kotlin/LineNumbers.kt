@@ -3,7 +3,7 @@ package tasks
 
 class LineNumbers {
 
-    fun someMethod(list: List<Int>): Boolean {
+    fun someMethod(list: IntArray): Boolean {
 
         var counter = 1
         val countNumbersIsLine = 3
