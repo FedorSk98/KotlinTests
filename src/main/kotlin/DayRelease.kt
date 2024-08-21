@@ -2,7 +2,7 @@ package tasks
 
 class DayRelease {
 
-    fun findDayoffs(day: Int, array: List<Int>): Int {
+    fun findDayoffs(day: Int, array: IntArray): Int {
 
         var countVersion = 0
         var countDays = 0
